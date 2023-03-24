@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nucul verde</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+                .padure {
+                background-image: url("https://www.formula-as.ro/wp-content/uploads/2021/12/nuc-SH-15-768x509.jpg");
+                height: 300px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                opacity: 80%;
+                cursor: url(Images/tree-solid.svg) ,auto;
+            }
+            h1 {
+                position: absolute;
+                top: 80%;
+                left: 85%;
+                transform: translate(-50%, -50%);
+                color: brown;
+                font-family: 'Rowdies', cursive;
+            }
+            .soiuriNuciProductie {
+                margin: 0 auto;
+                text-align: center;
+                border-collapse: collapse;
+                border: 5px solid brown;
+                box-shadow: 5px 10px 20px 0 lightsalmon;
+               
+            }   
+            .soiuriNuciProductie tr:hover {
+                background-color: coral;
+                
+            }
+            .soiuriNuciProductie a {
+                text-decoration: none;
+                color:brown;
+            }
+            .soiuriNuciDetalii {
+                text-align: justify;
+                margin: 0 auto;
+                width: 90%;
+               border-collapse: collapse;
+               border: 5px solid brown;
+               box-shadow: 5px 10px 20px 0 lightsalmon;
+            }
+            .soiuriNuciDetalii th {
+                text-align: center;
+            }
+            th,td {
+            padding: 10px;
+            }
+
+                    
+            .tree {
+                height: 100px;
+                width: 1000px;
+                padding: 15px 30px;
+                
+            }
+            .menu {
+                overflow: hidden;
+                background-color: cadetblue;
+                font-size: 54px;
+                text-align: center;
+                cursor: url(Images/tree-solid.svg) ,auto;
+            }
+
+            .menu a {
+                color: white;
+                text-align: center;
+                border: 5px solid yellowgreen;
+                border-radius: 25%;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px; 
+            }
+
+            .menu a.active {
+                background-color: burlywood;
+            }
+
+            .menu a:hover {
+                background-color: darkcyan;
+                color: black;
+                font-weight:bold;
+                cursor: url(Images/tree-solid.svg) ,auto;
+                
+            }
+            body {
+                background-color: lightcyan;               
+               
+            }
+            p,table {
+                font-size: 16px;
+                font-family: 'Rowdies', cursive;
+                
+            }
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;      
+           }
+           #N1,#N2,#N3,#N4,#N5,#N6,#N7 {
+            width: 560px;
+            height: 180px;
+            border: 5px solid brown;
+           }
+           footer {
+            background: lightseagreen;
+            }
+        </style>
+    </head>
+<body>
+    <header>
+        <nav>
+           <div class="padure"> 
+                   <h1>NUCUL VERDE</h1>
+                 
+           </div>
+        </nav>  
+     </header>
+  
+    <nav class="menu">
+        <a href="ProiectFinal-Nucul.html" alt="Despre">Despre nuc</a>
+        <a class="active" href="SoiuriPlante.html" alt="Soiuri">Soiuri de nuci</a>
+        <a href="InfiintarePlantatie.html" alt="Plantatie">Infiintare plantatie</a>
+        <a href="Contact.html" alt="Contact" target="_self">Contact</a>
+    </nav>
+    <span class="trees">
+        <span class="fa fa-trees"></span>
+    </span>
+    <br>
+    <table class="soiuriNuciProductie" border="1">
+        <caption>Soiuri de nuci</caption>
+            <tr>
+                <th>Soi</th>
+                <th>Forma</th>
+                <th>Rezistenta bacterii</th>
+                <th>Marime</th>
+                <th>Productivitate</th>
+                <th>Intrare in rod</th>
+                <th>Randament miez</th>
+            </tr>
+            <tr>
+                <td><a href="#N1">Jupanesti</a></td>
+                <td>Ovo-conica varf proeminent</td>
+                <td>Puternica</td>
+                <td>11.2gr</td>
+                <td>1800kg/ha</td>
+                <td>4-5 ani</td>
+                <td>51.9%</td>
+            </tr>
+            <tr>
+                <td><a href="#N2">Geoagiu 65</a></td>
+                <td>Ovoconică vârf proeminent</td>
+                <td>Medie</td>
+                <td>14gr</td>
+                <td>2200kg/ha</td>
+                <td>5-6 ani</td>
+                <td>50%</td>
+            </tr>
+            <tr>
+                <td><a href="#N3">Sibișel 522</a></td>
+                <td>Ovoconică cu vârful plan</td>
+                <td>Medie</td>
+                <td>13gr</td>
+                <td>2000kg/ha</td>
+                <td>5-6 ani</td>
+                <td>49%</td>
+            </tr>
+            <tr>
+                <td><a href="#N4">Ciprian-Ion</a></td>
+                <td>Ovoidală</td>
+                <td>Puternică</td>
+                <td>12.5-13.5gr</td>
+                <td>2000kg/ha</td>
+                <td>6 ani</td>
+                <td>49-50%</td>
+            </tr>
+            <tr>
+                <td><a href="#N5">Germisara</a></td>
+                <td>Ovoidală vârf ascuțit</td>
+                <td>Puternică</td>
+                <td>15gr</td>
+                <td>2000kg/ha</td>
+                <td>5-6 ani</td>
+                <td>49%</td>
+            </tr>
+            <tr>
+                <td><a href="#N6">Claudia-Ioana</a></td>
+                <td>Ovoidală bază aplatizată</td>
+                <td>Puternică</td>
+                <td>13gr</td>
+                <td>1900kg/ha</td>
+                <td>5-6 ani</td>
+                <td>50-55%</td>
+            </tr>
+            <tr>
+                <td><a href="#N7">Sibișel 44</a></td>
+                <td>Ovoidală vârf ascuțit bază rotunjită</td>
+                <td>Puternică</td>
+                <td>14.5gr</td>
+                <td>2000kg/ha</td>
+                <td>6 ani</td>
+                <td>48%</td>
+            </tr>
+    </table>
+    <br><br>
+    <table class="soiuriNuciDetalii" border="1">
+        <caption></caption>
+        <tr>
+            <th>Imagine fruct</th>
+            <th>Detalii fruct</th>
+        </tr>
+        <tr id="N1">
+            <td><img src="https://www.nucifereregia.ro/wp-content/uploads/2020/01/jupanesti_resize-820x600.jpg" alt="Jupanesti" ></td>
+            <td>
+ Jupânești, soi de nuc obținut la ICDP Pitești-Mărăcineni, este un soi productiv cu rezistență sporită la ger și la bolile specifice.Fructul este mijlociu, oval, cu vârful proeminent. 
+ Greutatea medie a fructului este de 11,2 grame, iar randamentul în miez este de 51,9%, de culoare gălbuie și cu gust plăcut. 
+ Coaja este cafenie iar miezul conține lipide și substanțe proteice. Maturarea are loc în prima jumătate a lunii octombrie.
+            </td>
+        </tr>
+        <tr id="N2">
+            <td><img src="https://www.nucifereregia.ro/wp-content/uploads/2020/01/geoagiu65_resize-3-820x600.jpg" alt="Geoagiu65"></td>
+            <td>
+ Geoagiu 65, un soi dezvoltat de către SCDP Geoagiu, este un nuc semi-viguros, productiv, având o rezistență bună la ger și la bolile specifice nucului. 
+ Greutatea medie a fructului este de 14 grame, iar randamentul în miez este de 50% si conține 69% substanțe grase și 17,5 % substanțe proteice. 
+ Tegumentul este de culoare gălbuie-închis. Gustul este plăcut aromat. Maturarea fructelor are loc în a doua jumătate a lunii octombrie.
+            </td>
+        </tr>
+        <tr id="N3">
+            <td><img src="https://www.nucifereregia.ro/wp-content/uploads/2020/01/sibisel522_resize-820x600.jpg"></td>
+            <td>
+ Sibișel 522, dezvoltat deasemenea de către SCDP Geoagiu, este un soi productiv de vigoare mijlocie, care intră repede în rod, începând din anul 5-6 de la plantare, rezistă bine la ger și la bolile specifice nucului. 
+ Greutatea medie a fructului 12-13 grame, iar randamentul în miez este de 46-50% si conține lipide, substanțe proteice și are un gust plăcut, aromat. 
+ Maturarea nucilor are loc în a doua jumătate a lunii septembrie.
+            </td>
+        </tr>
+        <tr id="N4">
+            <td><img src="https://www.nucifereregia.ro/wp-content/uploads/2020/01/ciprian_ion_resize-820x600.jpg" alt="CipriI"></td>
+            <td>
+ Ciprian-Ion, dezvoltat de SCDP Geoagiu, este un nuc de vigoare mijlocie, cu o coroană piramidală deschisă, ramuri de schelet lungi și groase, formațiuni de rod mixte. 
+ Are o comportare foarte bună la bolile specifice nucului, intră pe rod în anul 6 de la plantare și rodește bine în fiecare an. 
+ Maturarea nucilor are loc în ultima decadă a lunii septembrie. Miezul reprezintă 49-50% din greutatea fructului, are tegumentul de culoare gălbuie, se scoate foarte usor și întreg din coajă.
+            </td>
+        </tr>
+        <tr id="N5">
+            <td><img src="https://www.nucifereregia.ro/wp-content/uploads/2020/01/germisara_resize-2-820x600.jpg" alt="Germisara"></td>
+            <td>
+ Germisara, soi de nuc obținut la SCDP Geoagiu, introdus în cultură în anul 1979. Fructul este de dimensiune foarte mare (15g) cu o formă ovoidală, cu baza rotunjită și vârful ascuțit. 
+ Pomul este de vigoare mică-mijlocie și intră pe rod dupa 5-6 ani de la plantare. Deasemenea are o rezistență foarte bună la bolile specifice nucului.
+            </td>
+        </tr>
+        <tr id="N6">
+            <td><img src="https://www.nucifereregia.ro/wp-content/uploads/2020/01/claudia_ioana_resize-820x600.jpg" alt="Claudia"></td>
+            <td>
+ Claudia-Ioana, introdus în cultură în anul 2003, deasemenea obținut la SDCP Geoagiu județul Hunedoara. Pomul este de vigoare mijlocie, cu coroana piramidală deschisă, ramuri de schelet lungi și groase și formații de rod mixte. 
+ Fructul are formă ovoidală cu bază aplatizată. Miezul reprezintă 50-55% din greutatea fructului, are tegumentul de culoare galbuie deschisă, și conține 67,5% substanțe grase și 16,70% substanțe proteice, gustul este foate plăcut aromat.
+ Maturarea fructelor se face în prima decadă a lunii septembrie.                
+            </td>
+        </tr>
+        <tr id="N7">
+            <td><img src="https://www.nucifereregia.ro/wp-content/uploads/2020/01/sibisel44_resize-820x600.jpg" alt="Sibisel44"></td>
+            <td>
+ Sibișel 44, a fost selecționat la SCDP Geoagiu din populațiile de nuc de la Sibișel și introdus în cultură în anul 1979. Pomul este de vigoare mijlocie, are coroana piramidală largă, cu ramuri de schelet lungi și destul de groase garnisite cu formațiuni de rod mixte.
+ Fructul este de dimensiune mare, cu formă ovoidală cu vârful ascuțit și baza rotunjită. Miezul reprezintă 48% din greutatea fructului, are tegumentul de culoare alb-galbuie este crocant, are o concentrație mare de substanțe proteice (18,40%) iar gustul este dulce, plăcut aromat. 
+ Maturarea fructelor se face în ultima decadă a lunii septembrie și uneori la început de octombrie.               
+            </td>
+        </tr>
+    </table>
+<br>
+    
+<footer>
+    <p>&copy; Copyright NUCUL VERDE</p>
+</footer>  
+   
+</body>
+</html>
