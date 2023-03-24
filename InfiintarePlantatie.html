@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nucul verde</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .padure {
+        background-image: url("https://www.formula-as.ro/wp-content/uploads/2021/12/nuc-SH-15-768x509.jpg");
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        opacity: 80%;
+        cursor: url(Images/tree-solid.svg), auto;
+      }
+      h1 {
+        position: absolute;
+        top: 80%;
+        left: 85%;
+        transform: translate(-50%, -50%);
+        color: brown;
+        font-family: "Rowdies", cursive;
+      }
+      .soiuriNuciProductie {
+        margin: 0 auto;
+        text-align: center;
+        border-collapse: collapse;
+        border: 5px solid brown;
+        box-shadow: 5px 10px 20px 0 lightsalmon;
+      }
+      tr:hover {
+        background-color: coral;
+        transition: background-color 0.5s linear;
+      }
+      .soiuriNuciProductie a {
+        text-decoration: none;
+        color: brown;
+      }
+      .soiuriNuciDetalii {
+        text-align: justify;
+        margin: 0 auto;
+        width: 90%;
+        border-collapse: collapse;
+        border: 5px solid brown;
+        box-shadow: 5px 10px 20px 0 lightsalmon;
+      }
+      .soiuriNuciDetalii th {
+        text-align: center;
+      }
+      th,
+      td {
+        padding: 10px;
+      }
+
+      .rezultatProiect {
+        text-align: center;
+      }
+
+      .tree {
+        height: 100px;
+        width: 1000px;
+        padding: 15px 30px;
+      }
+      .menu {
+        overflow: hidden;
+        background-color: cadetblue;
+        font-size: 54px;
+        text-align: center;
+        cursor: url(Images/tree-solid.svg), auto;
+      }
+
+      .menu a {
+        color: white;
+        text-align: center;
+        border: 5px solid yellowgreen;
+        border-radius: 25%;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .planPlantatie {
+        border-radius: 10px;
+        border: 5px greenyellow solid;
+        display: block;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+        width: 50%;
+        filter: saturate(4);
+      }
+
+      .menu a.active {
+        background-color: burlywood;
+      }
+
+      .menu a:hover {
+        background-color: darkcyan;
+        color: black;
+        font-weight: bold;
+        cursor: url(Images/tree-solid.svg), auto;
+      }
+      body {
+        background-color: lightcyan;
+      }
+      li {
+        margin: 10px 0;
+      }
+      p,
+      table,
+      fieldset {
+        font-size: 16px;
+        font-family: "Rowdies", cursive;
+      }
+      .sentOrder {
+        font-size: 16px;
+        font-family: "Rowdies", cursive;
+        border-radius: 8px;
+        padding: 15px;
+        color: white;
+        background-color: green;
+        display: block;
+        margin: auto;
+      }
+      #N1,
+      #N2,
+      #N3,
+      #N4,
+      #N5,
+      #N6,
+      #N7 {
+        width: 560px;
+        height: 180px;
+        border: 5px solid brown;
+      }
+
+      footer {
+        background: lightseagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="padure">
+          <h1>NUCUL VERDE</h1>
+        </div>
+      </nav>
+    </header>
+
+    <nav class="menu">
+      <a href="ProiectFinal-Nucul.html" alt="Despre">Despre nuc</a>
+      <a href="SoiuriPlante.html" alt="Soiuri">Soiuri de nuci</a>
+      <a class="active" href="InfiintarePlantatie.html" alt="Plantatie"
+        >Infiintare plantatie</a
+      >
+      <a href="Contact.html" alt="Contact" target="_self">Contact</a>
+    </nav>
+    <span class="trees">
+      <span class="fa fa-trees"></span>
+    </span>
+    <br />
+    <fieldset>
+      <legend>Formular de calcul-numar puieti</legend>
+      <ol type="1">
+        <li>Toti puietii de nuc au varsta de 3 ani,indiferet de soi.</li>
+        <li>Distanta intre puieti:</li>
+        <ul>
+          <li>
+            Distanta intre randuri pe
+            <b>Latimea parcelei: 6 x 6 metri (vezi Figura) </b>
+          </li>
+          <li>
+            Distanta intre randuri pe
+            <b>Lungimea parcelei: 6 x 6 metri (vezi Figura) </b>
+          </li>
+        </ul>
+        <li>Dimensiunile introduse vor fi in <b>Metri</b></li>
+        <li>
+          Pentru forme neregulate a parcelei se va face un calcul
+          personalizat.Vezi sectiunea <a href="Contact.html">Contact</a>
+        </li>
+      </ol>
+      <label for="latimeParcela">Latimea parcelei(metri):</label>
+      <input type="number" value="40" min="1" max="1000" id="latime" />
+      <label for="LungimeParcela">Lungimea parcelei(metri):</label>
+      <input type="number" value="40" min="1" max="1000" id="lungime" />
+      <button class="sentOrder" onclick="calcul()">
+        Calculeaza numar de NUCI!!
+      </button>
+    </fieldset>
+    <div class="rezultatProiect">
+      <p>Numarul necesar de puieti:</p>
+      <p id="rezultat" style="color: red"></p>
+      <img src="Images/Plantatie.JPG" alt="planNuc" class="planPlantatie" />
+    </div>
+    <br />
+    <table class="soiuriNuciProductie" border="1">
+      <caption>
+        Soiuri de nuci
+      </caption>
+      <tr>
+        <th>Soi</th>
+        <th>Forma</th>
+        <th>Rezistenta bacterii</th>
+        <th>Marime</th>
+        <th>Productivitate</th>
+        <th>Intrare in rod</th>
+        <th>Randament miez</th>
+        <th>Cantitate(bucati)</th>
+      </tr>
+      <tr>
+        <td><a href="#N1">Jupanesti</a></td>
+        <td>Ovo-conica varf proeminent</td>
+        <td>Puternica</td>
+        <td>11.2gr</td>
+        <td>1800kg/ha</td>
+        <td>4-5 ani</td>
+        <td>51.9%</td>
+        <td><input type="number" value="0" min="1" max="200" /></td>
+      </tr>
+      <tr>
+        <td><a href="#N2">Geoagiu 65</a></td>
+        <td>Ovoconică vârf proeminent</td>
+        <td>Medie</td>
+        <td>14gr</td>
+        <td>2200kg/ha</td>
+        <td>5-6 ani</td>
+        <td>50%</td>
+        <td><input type="number" value="0" min="1" max="200" /></td>
+      </tr>
+      <tr>
+        <td><a href="#N3">Sibișel 522</a></td>
+        <td>Ovoconică cu vârful plan</td>
+        <td>Medie</td>
+        <td>13gr</td>
+        <td>2000kg/ha</td>
+        <td>5-6 ani</td>
+        <td>49%</td>
+        <td><input type="number" value="0" min="1" max="200" /></td>
+      </tr>
+      <tr>
+        <td><a href="#N4">Ciprian-Ion</a></td>
+        <td>Ovoidală</td>
+        <td>Puternică</td>
+        <td>12.5-13.5gr</td>
+        <td>2000kg/ha</td>
+        <td>6 ani</td>
+        <td>49-50%</td>
+        <td><input type="number" value="0" min="1" max="200" /></td>
+      </tr>
+      <tr>
+        <td><a href="#N5">Germisara</a></td>
+        <td>Ovoidală vârf ascuțit</td>
+        <td>Puternică</td>
+        <td>15gr</td>
+        <td>2000kg/ha</td>
+        <td>5-6 ani</td>
+        <td>49%</td>
+        <td><input type="number" value="0" min="1" max="200" /></td>
+      </tr>
+      <tr>
+        <td><a href="#N6">Claudia-Ioana</a></td>
+        <td>Ovoidală bază aplatizată</td>
+        <td>Puternică</td>
+        <td>13gr</td>
+        <td>1900kg/ha</td>
+        <td>5-6 ani</td>
+        <td>50-55%</td>
+        <td><input type="number" value="0" min="1" max="200" /></td>
+      </tr>
+      <tr>
+        <td><a href="#N7">Sibișel 44</a></td>
+        <td>Ovoidală vârf ascuțit bază rotunjită</td>
+        <td>Puternică</td>
+        <td>14.5gr</td>
+        <td>2000kg/ha</td>
+        <td>6 ani</td>
+        <td>48%</td>
+        <td><input type="number" value="0" min="1" max="200" /></td>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <button class="sentOrder" onclick="window.location.href='Contact.html'">
+      Trimite comanda
+    </button>
+    <footer>
+      <p>&copy; Copyright NUCUL VERDE</p>
+    </footer>
+    <script src="calculNuciPlantatie.js"></script>
+  </body>
+</html>
