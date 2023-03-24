@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            .tree,.clock,.phone {
+                height: 10px;
+                width: 10px;
+                padding: 5px 5px;
+                text-align: center;               
+                color: green;
+                font-size: 20px;
+                                   
+            }
+            .padure {
+                background-image: url("https://www.formula-as.ro/wp-content/uploads/2021/12/nuc-SH-15-768x509.jpg");
+                height: 300px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                opacity: 80%;
+                cursor: url(Images/tree-solid.svg) ,auto;
+            }
+             body {
+               background-color: lightcyan;
+            }
+            h1 {
+                position: absolute;
+                top: 80%;
+                left: 85%;
+                transform: translate(-50%, -50%);
+                color: brown;
+                font-family: 'Rowdies', cursive;
+            }
+            h2 {
+                color: green;
+                text-align: center;
+            }
+
+            .formular,.detalii,.Sent {
+                font-size: 19px;
+                text-align: center;
+            }
+
+            .Sent {
+            background-color: blueviolet;
+            border-radius: 5px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            margin: 4px 2x;
+            cursor: pointer;
+            border: none;
+          
+            }
+            .necesar {
+                text-align: left;
+                color: red;
+            }
+
+            .center {
+                text-align: center;
+                width: 95%;
+            }
+            footer {
+            background: lightseagreen;
+            }
+            .orar {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: left;
+                padding: 10px;
+            }
+            .locatie {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 5px solid green;
+                flex-direction: column;
+            }
+            iframe {
+                width: 100%;
+                height: 500px;
+                filter: invert(100%);
+            }
+            
+            .menu {
+                overflow: hidden;
+                background-color: cadetblue;
+                font-size: 54px;
+                text-align: center;
+                cursor: url(Images/tree-solid.svg) ,auto;
+            }
+
+            .menu a {
+                color: white;
+                text-align: center;
+                border: 5px solid yellowgreen;
+                border-radius: 25%;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px; 
+            }
+
+            .menu a.active {
+                background-color: burlywood;
+            }
+
+            .menu a:hover {
+                background-color: darkcyan;
+                color: black;
+                font-weight:bold;
+                cursor: url(Images/tree-solid.svg) ,auto;
+                
+            }
+            </style>
+    </head>
+<body>
+<header>
+    <nav>
+       <div class="padure"> 
+            <a href="ProiectFinal-Nucul.html"alt="Home" target="_self">
+                <h1>NUCUL VERDE</h1>
+             </a> 
+       </div>
+    </nav>  
+ </header>
+ <nav class="menu">
+    <a href="ProiectFinal-Nucul.html" alt="Despre">Despre nuc</a>
+    <a href="SoiuriPlante.html" alt="Soiuri">Soiuri de nuci</a>
+    <a href="InfiintarePlantatie.html" alt="Plantatie">Infiintare plantatie</a>
+    <a class="active" href="Contact.html" alt="Contact" target="_self">Contact</a>
+</nav>
+<span class="trees">
+    <span class="fa fa-trees"></span>
+</span>
+<br>
+    <fieldset class="formular">
+        <legend><b>Formular de contact</b></legend>
+        <table style="float:left">
+            <tr>
+                <td>
+                    <label for="fname">Nume si prenume:</label>
+                </td>
+                <td> </td>
+                <td>
+                    <input type="text" id="fname" name="fname" style="width:80%">
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <label for="fname">Telefon:</label>
+                </td>
+                <td> </td>
+                <td>
+                 <input type="text" id="fname" name="fname" style="width:80%">
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <label for="fname">Adresa e-mail:</label>
+                </td>
+                <td> </td>
+                <td>
+                    <input type="text" id="fname" name="fname" style="width:80%">
+                </td>
+                
+            </tr>
+            <tr>
+                <td>Mesajul dvs.: </td>
+                <td> </td>
+                <td>
+                    <textarea rows="8" cols="60" placeholder="Mesajul tau..."></textarea>
+                </td>
+                
+            </tr>
+        </table>
+         <form>
+                <p>*Doriti sa dezvoltati o plantatie de nuci?</p>
+                <input type="radio" name="fruct" value="Da">Da<br>
+                <input type="radio" name="fruct" value="Nu">Nu<br>
+                <input type="radio" name="fruct" value="Info">Doresc informatii despre cultura de nuc<br>
+        </form>
+        <br><br>
+        <button class="Sent">Trimite formular</button><br><br>
+  </fieldset>
+  <span class="necesar">*campuri obligatorii</span>
+   
+  <div class="detalii"> 
+        <table border="1" bordercolor="green" class="orar">
+            <caption><b>Orar de functionare:</b></caption>
+            <tr>
+                <td>
+                     <span class="tree">
+                        <span class="fa fa-tree">
+                        </span>
+                    </span>Luni-Vineri
+                </td>
+                <td class="detalii">8-17</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="tree">
+                        <span class="fa fa-tree"></span>
+                        </span>Sambata</td>
+                <td class="detalii">8-12</td>
+            </tr>
+                <td>
+                    <span class="phone">
+                        <span class="fa fa-phone"></span>
+                        </span>Telefon</td>
+                    </td>
+                <td class="detalii">0741075954</td>
+        </table>
+       
+        <p>
+            <span class="tree">
+                <span class="fa fa-tree"><b> Locatie: Strada Grivita Nr.47 Sebes Jud.Alba Romania</b></span>
+            </span> 
+        </p>
+        
+  </div>
+  <div class="locatie">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2773.3801768831645!2d23.572597951402315!3d45.96366570789443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474c1ef63b52cbbf%3A0xe415239f2e522556!2sStrada%20Grivi%C8%9Ba%2047%2C%20Sebe%C8%99%20515800!5e0!3m2!1sro!2sro!4v1671363242743!5m2!1sro!2sro" 
+        width="600" height="450" style="border: 100px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+  </div>
+    <footer>
+        <p>&copy; Copyright NUCUL VERDE</p>
+    </footer>  
+</body>
+</html>
